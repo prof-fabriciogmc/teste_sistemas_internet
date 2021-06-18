@@ -1,0 +1,19 @@
+plugins {
+    id 'war'
+    id 'org.gretty' version '2.2.0'
+}
+
+dependencies {
+    
+    testCompileOnly 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    compile 'org.seleniumhq.selenium:selenium-java:3.4.0'
+}
+
+repositories {
+    jcenter()
+}
+
+test{
+    useJUnitPlatform()
+}
